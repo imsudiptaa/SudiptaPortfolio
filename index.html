@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav">
+        <div class="logo">
+            <img src="./Images/logo.png" class="profile">
+            <h3>Sudipta's Portfolio</h3>
+        </div>
+        <ul>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>   
+            <li><a href="#education">EDUCATION</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+        <div class="text">
+        <h2>I am Sudipta Mandal</h2>
+        <h1>Software Engineer +</h1>
+        <h1> UI/UX Designer </h1>
+        <br>
+        <br>
+        <p>A dedicated engineering student expanding expertise in full-stack development.<br> Passionate about blending clean design with functional code, who aims to create impactful solutions that enhance user experiences.</p>
+        </div>
+        <img src="/Images/photo2.jpg" style="width: 300px; height: 350px;">
+    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content-wrapper">
+            <div class="one-box">
+                <h3 class="exp" id="experience">MY EXPERIENCE</h3>
+                <br>
+                <br>
+                <br><br>
+                <div class="one-container">
+                    <h4>October 2024 - February 2025</h4>
+                    <h1 class="one">OPEN SOURCE CONTRIBUTOR</h1>
+                    <h4>Contributor | Hacktoberfest'24, GSSoC-EXTD'24, WOC 4.0</h4>
+                </div>
+                <br>
+                <div class="one-container">
+                    <h4>August 2024</h4>
+                    <h1 class="one">FRONTEND DEVELOPER</h1>
+                    <h4>Participant | Smart India Hackathon</h4>
+                </div>
+                <br>
+                <div class="one-container">
+                    <h4>January 2023 - Present</h4>
+                    <h1 class="one">GRAPHIC DESIGNER</h1>
+                    <h4>Graphic Designer | Lensified NSEC, Nexus NSEC</h4>
+                </div>
+            </div>
+            <br>
+            <div class="one-box">
+                <h3 class="edu" id="education">MY EDUCATION</h3>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="one-container">
+                    <h4>2022 - Present</h4>
+                    <h1 class="one">Artificial Intelligence & Machine Learning</h1>
+                    <h4>B.Tech | Netaji Subhash Engineering College</h4>
+                </div>
+                <br>
+                <div class="one-container">
+                    <h4>2019 - 2021</h4>
+                    <h1 class="one">Higher Secondary Education</h1>
+                    <h4>WBCHSE | Pundibari G.D.L Balika Vidyalaya </h4>
+                </div>
+            </div>
+        <br>
+        </div>
+        <br>
+        <h3 class="skill" id="skills">MY SKILLS</h3>
+        <ul>
+            <li>
+                <img src="/Images/html icon.png" height="180px" width="180px">
+                <br>
+                <span class="h">HTML</span></li>
+            <li>
+                <img src="/Images/css icon.png" height="180px" width="180px">
+                <br>
+                <span class="css">CSS</span>
+            </li>
+            <li> 
+                <img src="/Images/javascript icon.png" height="180px" width="180px">
+                <br>
+                <span class="js">Javascript</span>
+            </li>
+            <li>
+                <img src="/Images/canva icon.png" height="180px" width="180px">
+                <br>
+                <span class="c">Canva</span>
+            </li>
+            <li>
+                <img src="/Images/figma icon.png" height="180px" width="180px">
+                <br>
+                <span class="fg">Figma</span> 
+            </li>
+            <li>
+                <img src="/Images/python icon.png" height="180px" width="180px">
+                <br>
+                <span class="p"> Python</span>
+            </li>
+            
+        </ul>
+        <h3 class="work" id="works">MY RECENT WORKS</h3>
+        <div class="video-grid">        
+            <div class="v">
+                <video autoplay loop muted height="100%" width="100%">
+                    <source src="/Videos/food delivery.mp4" autoplay loop muted>
+                </video>
+            </div>
+            <div class="v">
+                <video autoplay loop muted width="100%" height="100%">
+                    <source src="/Videos/desert.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="v">
+                <video autoplay loop muted width="100%" height="100%">
+                    <source src="/Videos/photography.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="v">
+                <video autoplay loop muted width="100%" height="100%">
+                    <source src="/Videos/login.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    <footer class="footer">
+        <h3>Contact Details</h3>
+        <p>Email: imsudiptaa@gmail.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/imsudiptaa" target="_blank">linkedin.com/in/imsudiptaa</a></p>
+        <p>GitHub: <a href="https://github.com/imsudiptaa" target="_blank">github.com/imsudiptaa</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener("scroll", function() {
+            let footer = document.querySelector(".footer");
+            let scrollPosition = window.innerHeight + window.scrollY;
+            let pageHeight = document.documentElement.scrollHeight;
+        
+            if (scrollPosition >= pageHeight - 10) {
+                footer.style.visibility = "visible";
+                footer.style.opacity = "1";
+            } else {
+                footer.style.visibility = "hidden";
+                footer.style.opacity = "0";
+            }
+        });
+        
+    </script>
+    
+</body>
+</html>
